@@ -246,7 +246,7 @@ Modules → Segment Editor
 | Kidneys | ~75 |
 | Heart | ~75 |
 
-Thresholds may vary depending on the simulation.
+Thresholds may vary depending on the simulation, XCAT allows you to chose a value for each organ.
 
 ---
 
@@ -307,7 +307,7 @@ Generated STL meshes may require post-processing before 3D printing.
 Recommended software:
 
 - Rhino
-- MeshMixer
+- FreeCAD
 
 Typical operations:
 
@@ -315,7 +315,7 @@ Typical operations:
 - smoothing
 - mesh repair
 - decimation
-
+Better instructions on how to post-process meshes will be pubished ASAP
 ---
 
 # Troubleshooting
@@ -341,10 +341,9 @@ data = data.reshape((44, 512, 512))
 Possible causes:
 
 - incorrect threshold
-- wrong binary file
-- wrong intensity scaling
+- set a proper activity when generating the act file with XCAT
+- if you want to 3D-print bones as a unique piece, set the activity for different kind of bones (marrow etc) at the same value 
 
-Try adjusting threshold values.
 
 ---
 
