@@ -6,6 +6,8 @@ Pipeline for converting XCAT binary phantom outputs (`.bin`) into:
 - NRRD volumes
 - STL meshes for 3D printing
 
+WARNING: usually you have 500 slices. Here only 44 slices are considered. 
+
 using Python inside 3D Slicer.
 
 ---
